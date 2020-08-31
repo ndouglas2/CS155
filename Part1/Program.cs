@@ -32,7 +32,8 @@ namespace Part1
             Console.WriteLine("Enter one number and press enter, then enter second number and press enter and so on:");
 
             // declare two integer variables
-            int n1, n2, n3, sum, mult, div;
+            int n1, n2, n3, sum, mult;
+            double div;
 
             string userInput;
             userInput = Console.ReadLine();
@@ -45,7 +46,7 @@ namespace Part1
 
             mult = n1 * n2 * n3;
 
-            div = sum / mult;
+            div = sum / (double)mult;
 
             // print a message along with the sum of the two numbers
             Console.WriteLine("The sum of those three numbers is");
