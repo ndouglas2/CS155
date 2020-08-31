@@ -26,7 +26,26 @@ namespace Homework2Lab2
     {
         static void Main(string[] args)
         {
+            int tickets, numCandyBars, numGumballs, remainder;
+
+            //Welcome message and prompt for number of tickets won
             Console.WriteLine("Hello! Please enter the number of tickets you have won");
+            tickets = Int32.Parse(Console.ReadLine());
+
+            //Calculate number of candy bars purchaseable
+            numCandyBars = tickets / 10;
+
+            //Calculate the remaining number of tickets
+            remainder = tickets % 10;
+
+            //Use remainder to calculate number of gumballs purchaseable
+            numGumballs = remainder / 3;
+
+            //Print results to screen
+            Console.WriteLine("With " + tickets + " tickets, you can purchase " + numCandyBars + " candy bar(s) and " + numGumballs + " gumball(s). Congrats!");
+
+            Console.ReadLine();
+            
         }
     }
 }
