@@ -20,7 +20,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Homework2Lab2
+namespace Lab2
 {
     class Program
     {

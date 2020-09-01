@@ -21,7 +21,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Part1
+namespace Lab1
 {
     class MyFirstProgram
     {
