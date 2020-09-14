@@ -1,7 +1,7 @@
 ﻿/// Chapter No. 2		Exercise No. 1
 /// File Name: Homework2Part1.cs
 /// @author: Nate Douglas
-/// Date:  Septtember 14, 2020
+/// Date:  September 14, 2020
 ///
 /// Problem Statement: Create a program that takes in a first and last name, and outputs that name in Pig Latin. 
 /// 
