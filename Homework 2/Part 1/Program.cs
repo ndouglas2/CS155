@@ -39,6 +39,7 @@ namespace Part_1
             string firstNameNoFirstLetter = " ";
             string lastNameNoFirstLetter = " ";
 
+
             Console.WriteLine("Hello! Please input your first name and hit enter: ");
             firstName = Console.ReadLine();
             firstName = firstName.ToLower();
@@ -50,14 +51,21 @@ namespace Part_1
             firstLetterFN = firstName.Substring(0, 1);
             firstLetterLN = lastName.Substring(0, 1);
 
-            firstNameNoFirstLetter = firstName.Substring(1);
-            lastNameNoFirstLetter = lastName.Substring(1);
+            firstNameNoFirstLetter = firstName.Substring(2);
+            lastNameNoFirstLetter = lastName.Substring(2);
 
-            pigFirstName = firstNameNoFirstLetter + firstLetterFN + "ay";
-            pigLastName = lastNameNoFirstLetter + firstLetterLN + "ay";
+            string newFirstNameFL = firstName.Substring(1, 1);
+            string newLastNameFL = lastName.Substring(1, 1);
+            newFirstNameFL = newFirstNameFL.ToUpper();
+            newLastNameFL = newLastNameFL.ToUpper();
+
+            pigFirstName = newFirstNameFL + firstNameNoFirstLetter + firstLetterFN + "ay";
+            pigLastName = newLastNameFL + lastNameNoFirstLetter + firstLetterLN + "ay";
 
             Console.WriteLine("Hello " + firstName + " " + lastName + "!");
             Console.WriteLine("Your name in Pig Latin is: " + pigFirstName + " " + pigLastName);
+
+            Console.ReadLine();
         }
     }
 }
