@@ -1,0 +1,17 @@
+﻿<Window x:Class="Lab_1__GUI_Lab_.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab_1__GUI_Lab_"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label Content="First Name" HorizontalAlignment="Left" Margin="292,142,0,0" VerticalAlignment="Top" Width="119"/>
+        <Label Content="Last Name" HorizontalAlignment="Left" Margin="292,173,0,0" VerticalAlignment="Top" Width="119"/>
+        <Button Content="Translate" HorizontalAlignment="Left" Margin="336,225,0,0" VerticalAlignment="Top" Width="75" Height="23" RenderTransformOrigin="0.231,1.143" Click="Button_Click"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Name="lnTxtBox" Margin="370,177,0,0" TextWrapping="Wrap" Text="Last Name Here" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Name="fnTxtBox" Margin="370,146,0,0" TextWrapping="Wrap" Text="First Name Here" VerticalAlignment="Top" Width="120" TextChanged="lnTxtBox_TextChanged"/>
+
+    </Grid>
+</Window>
