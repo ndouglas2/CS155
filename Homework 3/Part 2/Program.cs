@@ -8,9 +8,10 @@
 /// 
 /// Overall Plan:
 /// 1) Print an initial welcoming message to the screen
-/// 2) Prompt user if the lamp is plugged in
-/// 3) If yes, prompt user if the bulb is burned out
-/// 4) If no, tell user the lamp may need to be repaired.  
+/// 2) Prompt for cost of item
+/// 3) Error check to see if item cost is in range
+/// 4) If yes, calculate the change required to be returned in different denominations of coinage. 
+/// 5) If no, print error message and quit program. 
 /// 
 
 using System;
@@ -34,6 +35,7 @@ namespace Part_2
             int nickles = 0;
             int remainder = 0;
             
+            //Welcome Message
             Console.WriteLine("Welcome to Vendotron 5000! Please note I only accept a single dollar at a time.");
             Console.WriteLine();
             Console.WriteLine("Please input the cost of your item in number of cents in increments of 5 without the decimal. So .25 = 25 and $1 = 100: ");
@@ -41,14 +43,19 @@ namespace Part_2
             itemCost = Convert.ToInt32(input);
             change = MONEY_GIVEN - itemCost;
 
+            //Error checks to see if item cost is in the correct range
             if (itemCost >= 25 && itemCost <= 100)
             {
+                //Equations for required change
                 quarters = change / 25;
                 remainder = change % 25;
+
                 dimes = remainder / 10;
                 remainder = remainder % 10;
+
                 nickles = remainder / 5;
 
+                //Output to screen
                 Console.WriteLine("Your item cost " + itemCost + " cents and as you gave me a dollar, your change is: ");
                 Console.WriteLine();
                 Console.WriteLine(quarters + " Quarters.");
