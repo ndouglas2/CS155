@@ -36,6 +36,7 @@ namespace Among_Us_Randomizer
             int rndmAction = 0;
             int rndmRoom = 0;
 
+            //Arrays for each text box
             string[] color = { "Red", "Blue", "Green", "Pink", "Orange", "Yellow", "Black", "White", "Purple", "Brown", "Cyan", "Lime", "You", "Me" };
 
             string[] room = { "Reactor", "Upper Engine", "Lower Engine", "Security", "MedBay", "Electrical", "Cafeteria", "Storage", "Admin", "Oxygen", "Weapons", "Nav.", "Shields", "Comms", "The Hallway"};
