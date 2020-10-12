@@ -1,0 +1,24 @@
+﻿<Window x:Class="Lecture6Lab1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lecture6Lab1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBox x:Name="val1txtbx" HorizontalAlignment="Left" Height="23" Margin="278,141,0,0" TextWrapping="Wrap" Text="Value 1" VerticalAlignment="Top" Width="65"/>
+        <TextBox x:Name="val2txtbx" HorizontalAlignment="Left" Height="23" Margin="406,141,0,0" TextWrapping="Wrap" Text="Value 2" VerticalAlignment="Top" Width="65"/>
+        <ListBox x:Name="operandlist" HorizontalAlignment="Left" Height="31" Margin="348,137,0,0" VerticalAlignment="Top" Width="53" >
+            <ListBoxItem Content="+"/>
+            <ListBoxItem Content="-"/>
+            <ListBoxItem Content="*"/>
+            <ListBoxItem Content="/"/>
+            <ListBoxItem Content="%"/>
+        </ListBox>
+        <Button Content="Calculate" HorizontalAlignment="Left" Margin="335,255,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <TextBox x:Name="resultTxtbx" HorizontalAlignment="Left" Height="23" Margin="335,199,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="75"/>
+        <Label Content="=" HorizontalAlignment="Left" Margin="363,168,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
