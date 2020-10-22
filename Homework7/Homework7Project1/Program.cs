@@ -1,4 +1,22 @@
-﻿using System;
+﻿/// Chapter No. 7		Exercise No. 1
+/// File Name: Homework7Part1.cs
+/// @author: Nate Douglas
+/// Date:  October 21, 2020
+///
+/// Problem Statement: Create an Odometer Class and a driver program to test its methods.
+/// 
+/// 
+/// Overall Plan:
+/// 1) Create a Odometer Class with constructors, getters and setters, and methods for Reseting the values, adding to the values and the MPG
+/// 2) Create a driver program that tests these methods.  
+/// 
+
+using System;
+using System.CodeDom.Compiler;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace Homework7Project1
 {

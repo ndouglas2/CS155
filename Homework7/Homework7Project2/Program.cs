@@ -1,4 +1,22 @@
-﻿using System;
+﻿/// Chapter No. 7		Exercise No. 2
+/// File Name: Homework7Part2.cs
+/// @author: Nate Douglas
+/// Date:  October 21, 2020
+///
+/// Problem Statement: Create a Temperature Class and a driver program to test its methods.
+/// 
+/// 
+/// Overall Plan:
+/// 1) Create a temperature Class with constructors, getters and setters, and methods for equals, a toString method, and converting the temps to F and C.
+/// 2) Create a driver program that tests these methods.  
+/// 
+
+using System;
+using System.CodeDom.Compiler;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace Homework7Project2
 {
